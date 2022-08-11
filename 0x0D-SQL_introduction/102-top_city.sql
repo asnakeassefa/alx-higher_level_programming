@@ -1,2 +1,2 @@
 -- displaying Top 3 ava tempreture by city 
-SELECT * FROM (SELECT TOP 3 city,AVG(value) AS avg_temp FROM temperatures GROUP BY city HAVING month IN(7,8)) AS T ORDER BY avg_temp DESC;
+SELECT city, avg_temp FROM (SELECT city,AVG(value) AS avg_temp FROM temperatures GROUP BY city) AS T WHERE month IN (7,8) ORDER BY avg_temp DESC;
