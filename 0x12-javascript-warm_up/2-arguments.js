@@ -3,8 +3,8 @@ const process = require('process');
 
 if (process.argv.length > 3) {
   console.log('Arguments found');
-} else if (process.argv.length > 2){
+} else if (process.argv.length > 2) {
   console.log('Agument found');
-}else{
+} else {
   console.log('No argument')
 }
