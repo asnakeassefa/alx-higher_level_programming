@@ -5,7 +5,7 @@ const process = require('process');
 let first = 0;
 let second = 0;
 
-if (process.argv < 2) {
+if (process.argv.length < 2) {
   console.log(second);
 } else {
   process.argv.forEach(element => {
