@@ -9,7 +9,7 @@ if (process.argv.length < 2) {
   console.log(second);
 } else {
   process.argv.forEach(element => {
-    if (first < element) {
+    if (first < parseInt(element)) {
       second = first;
       first = element;
     }
