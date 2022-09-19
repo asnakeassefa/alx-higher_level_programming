@@ -12,6 +12,8 @@ if (process.argv.length < 2) {
     if (first < parseInt(element)) {
       second = first;
       first = element;
+    } else if (second < parseInt(element)) {
+      second = element;
     }
   });
 }
