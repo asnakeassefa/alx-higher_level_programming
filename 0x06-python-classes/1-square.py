@@ -8,4 +8,7 @@ class Square:
     '''
     Empty Square class
     '''
-    __size = 0
+    
+    def __init__(self):
+        self.__size = 5
+        
