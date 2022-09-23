@@ -8,5 +8,9 @@ class Square:
     '''
     Empty Square class
     '''
-    __size
+    def __init__(self, size):
+        '''
+        Arg size(int): square
+        '''
+        self.__size = size
         
