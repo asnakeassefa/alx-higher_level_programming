@@ -62,7 +62,7 @@ class Square:
                 value gets the position
         '''
 
-        if not type(value[0]) is int and type(value[1]) is int:
+        if not type(value[0]) is int and not type(value[1]) is int and not type(value) is tuple:
             raise TypeError('position must be a tuple of 2 positive integers')       
         self.__position = value
         
