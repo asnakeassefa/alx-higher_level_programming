@@ -6,11 +6,11 @@ empty square classes that defines a square.
 
 class Square:
     '''
-    Empty Square class
+        Square defines a sqaures
     '''
     def __init__(self, size):
         '''
-        Arg size(int): square
+        Args:
+            size (int): positive size of the square
         '''
         self.__size = size
-        

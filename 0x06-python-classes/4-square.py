@@ -1,45 +1,40 @@
 #!/usr/bin/python3
+'''
+square classes that defines a square.
+'''
 
-'''
-    class Square is initialize size
-'''
 
 class Square:
     '''
-    initialize a size
+        Square defines a sqaures
     '''
     def __init__(self, size=0):
         '''
         Args:
-            size(int): square
+            size (int): positive size of the square
         '''
-        if not type(size) is int:
-            raise TypeError('size must be an integer')
-        if size < 0:
-            raise  ValueError('size must be >= 0')
         self.size = size
 
     def area(self):
-        '''
-            returns area
-        '''
-        return self.__size * self.__size
+        ''' returns area of the square '''
+        return self.size ** 2
 
     @property
     def size(self):
         '''
-            returns size
+        get private variable size
         '''
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         '''
-            Args:
-                value(int) sets value
+        get private variable size
+        Args:
+            value (int): positive  integer to be stored to size
         '''
-        if not type(value) is int:
-            raise TypeError('size must be an integer')
+        if type(value) != int:
+            raise TypeError("size must be an integer")
         if value < 0:
-            raise  ValueError('size must be >= 0')
+            raise ValueError('size must be >= 0')
         self.__size = value

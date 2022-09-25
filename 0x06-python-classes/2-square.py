@@ -1,20 +1,21 @@
 #!/usr/bin/python3
 
 '''
-    class Square is initialize size
+square classes that defines a square.
 '''
+
 
 class Square:
     '''
-    Empty Square class
+        Square defines a sqaures
     '''
     def __init__(self, size=0):
         '''
-        Arg:
-            size(int): square
+        Args:
+            size (int): positive size of the square
         '''
-        if not type(size) is int:
-            raise TypeError('size must be an integer')
+        if type(size) != int:
+            raise TypeError("size must be an integer")
         if size < 0:
-            raise  ValueError('size must be >= 0')
+            raise ValueError('size must be >= 0')
         self.__size = size
