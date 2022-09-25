@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+'''
+    class Square is initialize size
+'''
+
 class Square:
     '''
     Empty Square class
