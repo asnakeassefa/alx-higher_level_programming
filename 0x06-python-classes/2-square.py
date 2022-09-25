@@ -1,13 +1,5 @@
 #!/usr/bin/python3
 
-#!/usr/bin/python3
-'''
-empty square classes that defines a square.
-'''
-
-from multiprocessing.sharedctypes import Value
-
-
 class Square:
     '''
     Empty Square class
